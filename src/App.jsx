@@ -4,8 +4,6 @@ import TrackList from './components/TrackList'
 import MusicPlayer from './components/MusicPlayer'
 import ThemeToggle from './components/ThemeToggle'
 
-const DEEZER_PROXY = 'https://cors.isomorphic-git.org/'
-
 export default function App() {
   const [query, setQuery] = useState('')
   const [tracks, setTracks] = useState([])
@@ -25,9 +23,10 @@ export default function App() {
       try {
         setLoading(true)
         setError('')
-        const res = await fetch(
-          `${DEEZER_PROXY}https://api.deezer.com/search?q=${encodeURIComponent(query)}`
-        )
+        // Use same-origin API route.
+        // - Local dev: Vite proxies /api/* to https://api.deezer.com (see vite.config.js)
+        // - Production (Vercel): serverless function in /api/search.js fetches Deezer server-side
+        const res = await fetch(`/api/search?q=${encodeURIComponent(query)}`)
         const data = await res.json()
         if (!data.data || data.data.length === 0) {
           setTracks([])
