@@ -6,7 +6,7 @@ A professional, responsive music player web application built with React and Tai
 
 ## Live Demo
 
-👉 https://YOUR-LIVE-LINK
+👉 https://deezer-music-player-pgxd0oo2q-gabriel-james-projects.vercel.app
 
 ## Features
 
