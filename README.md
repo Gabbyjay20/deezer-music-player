@@ -14,6 +14,7 @@ A professional, responsive music player web application built with React and Tai
 - Track listing with cover art
 - 30-second audio previews
 - Playback controls (play, pause, skip)
+- Favorites (save/remove tracks) with simple local login (localStorage)
 - Dark & Light mode
 - Responsive UI (mobile, tablet, desktop)
 - Error and empty-state handling
