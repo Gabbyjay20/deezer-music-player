@@ -1,44 +1,55 @@
-# 🎧 Deezer Music Player — Frontend Engineering Capstone
+# 🎵 Deezer Music Player (Capstone Project)
 
-## Overview
+## 📌 Description
 
-A professional, responsive music player web application built with React and Tailwind CSS. Users can search for music tracks and stream 30-second previews using the Deezer public API.
+This project is a Deezer-inspired music player web application built as my capstone project.
+The goal of this project is to demonstrate my understanding of frontend development using React, working with APIs, and building a clean, responsive user interface.
 
-## Live Demo
+The application allows users to browse music tracks and play 30-second previews through a simple and intuitive music player.
+
+## 🌍 Live Demo
 
 👉 https://deezer-music-player.vercel.app
 
-## Features
+## 🚀 Features
 
-- Music search (song, artist, album)
-- Track listing with cover art
-- 30-second audio previews
-- Playback controls (play, pause, skip)
+- Browse and search music tracks
+- Play and pause previews
+- Display song information (artist, title, album)
 - Favorites (save/remove tracks) with simple local login (localStorage)
-- Dark & Light mode
-- Responsive UI (mobile, tablet, desktop)
-- Error and empty-state handling
+- Responsive user interface
+- Dark/Light mode toggle
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - React (Vite)
-- JavaScript (ES6+)
+- JavaScript
 - Tailwind CSS
-- Deezer Public API
-- HTML5 Audio
+- Deezer API
 
-## Learning Outcomes
+## ▶️ How to Run Locally
 
-- API integration
-- Component-based architecture
-- State management with hooks
-- Responsive design
-- Production-ready deployment
+1. Clone the repository
 
-## Author
+```bash
+git clone https://github.com/Gabbyjay20/deezer-music-player.git
+cd deezer-music-player
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Start the development server
+
+```bash
+npm run dev
+```
+
+4. Open the URL Vite prints in the terminal (e.g. `http://localhost:5173/` or `http://localhost:5174/`).
+
+## 📝 Author
 
 Gabriel James — ALX Software Engineering
-
-## License
-
-Educational use only
